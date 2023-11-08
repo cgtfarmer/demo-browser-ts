@@ -17,7 +17,7 @@ copyAssets() {
   fi
 
   cp ./src/*.html ./out
-  cp  ./src/assets/css/* ./out/assets/css/
+  cp ./src/assets/css/* ./out/assets/css/
   rm tsconfig.tsbuildinfo
 }
 
