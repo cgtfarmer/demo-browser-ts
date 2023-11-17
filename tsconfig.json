@@ -2,10 +2,10 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "esnext",
-    "rootDir": "./app",
+    "rootDir": "src",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["./app/*"]
+      "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "outDir": "./site/assets/js",
@@ -19,6 +19,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "./app"
+    "src"
   ]
 }
