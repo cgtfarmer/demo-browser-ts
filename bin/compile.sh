@@ -1,6 +1,7 @@
 #!/bin/bash
 
 main() {
+  rm -rf ./site/assets/js/{main,test} && \
   tsc && \
   browserifyImports
 }
