@@ -4,6 +4,7 @@
     "module": "esnext",
     "rootDir": "./src/assets/app",
     "moduleResolution": "node",
+    // "baseUrl": "./src/assets/app",
     "paths": {
       "@/*": ["./src/assets/app/*"]
     },

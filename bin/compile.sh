@@ -7,7 +7,8 @@ main() {
 }
 
 browserifyImports() {
-  find ./out/assets/app -name "*.js" -exec sed -Ei "s|'@/|'/assets/app/|g" {} \;
+  local sedString="s|'@/|'$BASE_PATH|g"
+  find ./out/assets/app -name "*.js" -exec sed -Ei $sedString {} \;
 }
 
 copyAssets() {
@@ -18,7 +19,6 @@ copyAssets() {
 
   cp ./src/*.html ./out
   cp ./src/assets/css/* ./out/assets/css/
-  rm tsconfig.tsbuildinfo
 }
 
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
