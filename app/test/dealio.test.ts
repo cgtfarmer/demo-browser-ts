@@ -1,4 +1,4 @@
-import Dealio from '/src/assets/app/main/blah/dealio.ts';
+import Dealio from '@/main/blah/dealio.js';
 
 describe('when do the thing', () => {
 

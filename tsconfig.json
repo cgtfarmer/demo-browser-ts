@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "esnext",
-    "rootDir": "./src/assets/app",
+    "rootDir": "./app",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["./src/assets/app/*"]
+      "@/*": ["./app/*"]
     },
     "resolveJsonModule": true,
-    "outDir": "./out/assets/app",
+    "outDir": "./site/assets/js",
     "isolatedModules": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -19,6 +19,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "./src/assets/app"
+    "./app"
   ]
 }

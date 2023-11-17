@@ -1,4 +1,4 @@
-import Dealio from '../blah/dealio.js';
+import Dealio from '@/main/blah/dealio.js';
 
 export default class Thingy {
 
