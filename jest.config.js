@@ -22,10 +22,11 @@ module.exports = {
   // moduleDirectories: ['<rootDir>/app', 'node_modules'],
   // moduleDirectories: ['node_modules', '<rootDir>/src/assets/app/'],
   // moduleDirectories: ['node_modules', './app'],
-  moduleNameMapper: {
-    // '^@/(.*)$': '<rootDir>/src/assets/app/$1'
-    '^@/(.*)$': '<rootDir>/app/$1'
-  },
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
+  // moduleNameMapper: {
+  //   // '^@/(.*)$': '<rootDir>/src/assets/app/$1'
+  //   '^@/(.*)$': '<rootDir>/src/$1'
+  // },
   // moduleNameMapper: {
   //   // '^@/(.*)$': '<rootDir>/src/assets/app/$1'
   //   '^@/(.*)$': '$1'

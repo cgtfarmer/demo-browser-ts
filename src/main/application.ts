@@ -1,4 +1,4 @@
-import Thingy from '@/main/thing/thingy';
+import Thingy from './thing/thingy';
 import Dealio from '@/main/blah/dealio';
 
 export default class Application {

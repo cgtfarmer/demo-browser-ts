@@ -1,4 +1,4 @@
-import Dealio from '../main/blah/dealio';
+import Dealio from '@/main/blah/dealio';
 
 describe('when do the thing', () => {
 
