@@ -1,10 +1,7 @@
-import Thingy from '@/thing/thingy.js';
-import Dealio from '@/blah/dealio.js';
+import Thingy from './thing/thingy';
+import Dealio from '@/main/blah/dealio';
 
 export default class Application {
-
-  private static readonly CONTAINER_ID: string = 'main';
-  private static readonly CANVAS_ID: string = 'canvas';
 
   private static singleton: Application;
 
@@ -23,7 +20,7 @@ export default class Application {
   public start(): void {
     console.log('meow1');
 
-    Thingy.doTheThing();
+    Thingy.doTheThing(5);
 
     Dealio.doTheThing();
   }
