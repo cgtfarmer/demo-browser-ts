@@ -1,10 +1,10 @@
-import Dealio from '@/main/blah/dealio.js';
+import Dealio from '../main/blah/dealio';
 
 describe('when do the thing', () => {
 
   test('returns stuff', () => {
     const result = Dealio.doTheThing();
 
-    expect(result).toBe('stuff');
+    expect(result).toBe('Stuff');
   });
 });

@@ -1,4 +1,4 @@
-import Thingy from '@/main/thing/thingy.js';
+import Thingy from '../main/thing/thingy';
 
 describe('when do the thing', () => {
 

@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  BASE_PATH: /demo-browser-ts/assets/js/
+  BASE_PATH: /demo-browser-ts/assets/js
   SITE_DIR: ./site
 
 jobs:

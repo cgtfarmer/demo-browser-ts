@@ -4,8 +4,8 @@ const { compilerOptions } = require('./tsconfig')
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   preset: "ts-jest",
-  // testEnvironment: "node",
-  // roots: ['<rootDir>'],
+  testEnvironment: "node",
+  roots: ['<rootDir>/src'],
   // modulePaths: [compilerOptions.baseUrl],
   // modulePaths: ['<rootDir>/src/assets/app/'],
   // modulePaths: ['node_modules', '<rootDir>/src/assets/app/'],
@@ -22,10 +22,10 @@ module.exports = {
   // moduleDirectories: ['<rootDir>/app', 'node_modules'],
   // moduleDirectories: ['node_modules', '<rootDir>/src/assets/app/'],
   // moduleDirectories: ['node_modules', './app'],
-  // moduleNameMapper: {
-  //   // '^@/(.*)$': '<rootDir>/src/assets/app/$1'
-  //   '^@/(.*)$': '<rootDir>/app/$1'
-  // },
+  moduleNameMapper: {
+    // '^@/(.*)$': '<rootDir>/src/assets/app/$1'
+    '^@/(.*)$': '<rootDir>/app/$1'
+  },
   // moduleNameMapper: {
   //   // '^@/(.*)$': '<rootDir>/src/assets/app/$1'
   //   '^@/(.*)$': '$1'
@@ -34,7 +34,7 @@ module.exports = {
   testMatch: [
     // "**/__tests__/**/*.[jt]s?(x)",
     // "**/?(*.)+(spec|test).[tj]s?(x)"
-    "**/__tests__/**/*.[t]s?(x)",
-    "**/?(*.)+(spec|test).[t]s?(x)"
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[jt]s?(x)"
   ],
 }

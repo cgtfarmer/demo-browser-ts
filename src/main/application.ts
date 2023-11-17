@@ -1,5 +1,5 @@
-import Thingy from '@/main/thing/thingy.js';
-import Dealio from '@/main/blah/dealio.js';
+import Thingy from '@/main/thing/thingy';
+import Dealio from '@/main/blah/dealio';
 
 export default class Application {
 

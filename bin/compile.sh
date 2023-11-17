@@ -7,7 +7,7 @@ main() {
 }
 
 browserifyImports() {
-  local sedString="s|'@/|'$BASE_PATH|g"
+  local sedString="s|'@/(.*)';|'$BASE_PATH/\1.js';|g"
   find ./site/assets/js -name "*.js" -exec sed -Ei $sedString {} \;
 }
 
