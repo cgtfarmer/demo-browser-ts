@@ -4,7 +4,7 @@ const { compilerOptions } = require('./tsconfig')
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   preset: "ts-jest",
-  testEnvironment: "node",
+  // testEnvironment: "node",
   // roots: ['<rootDir>'],
   // modulePaths: [compilerOptions.baseUrl],
   // modulePaths: ['<rootDir>/src/assets/app/'],
@@ -13,7 +13,7 @@ module.exports = {
   // modulePaths: ['<rootDir>/app'],
   // moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths /*, { prefix: '<rootDir>/' } */),
   // moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/src/assets/app' }),
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
+  // moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
   // moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
   // transform: {
   //     '^.+\\.tsx?$': 'ts-jest'
