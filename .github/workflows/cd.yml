@@ -28,7 +28,7 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Init new repo in out folder and commit generated files
+      - name: Init new repo in SITE_DIR and commit generated files
         run: |
           cd ${{ env.SITE_DIR }}
           git init
